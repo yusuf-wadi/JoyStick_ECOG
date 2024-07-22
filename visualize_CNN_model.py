@@ -2,7 +2,7 @@ import torch
 import numpy as np
 from torch.nn.utils.rnn import pad_sequence
 import matplotlib.pyplot as plt
-from lstm_autoencoder import JoystickDataset, ECoGModel, DataLoader
+from jstick.cnn_linear import JoystickDataset, ECoGModel, DataLoader
 
 def plot_predictions(model, dataloader, num_samples=100):
     model.eval()
